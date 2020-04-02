@@ -65,7 +65,7 @@ object Build : BuildType({
     failureConditions {
         failOnMetricChange {
             metric = BuildFailureOnMetric.MetricType.BUILD_DURATION
-            threshold = 10
+            threshold = 100
             units = BuildFailureOnMetric.MetricUnit.DEFAULT_UNIT
             comparison = BuildFailureOnMetric.MetricComparison.MORE
             compareTo = value()
@@ -76,8 +76,6 @@ object Build : BuildType({
         notifications {
             notifier = "jbSlackNotifier"
             brachFilter = "+:*"
-            buildStarted = true
-            buildFailed = true
             buildFinishedSuccessfully = true
             param("plugin:notificator:jbSlackNotifier:connection", "PROJECT_EXT_75")
             param("plugin:notificator:jbSlackNotifier:channel", "U037MMR1C")
