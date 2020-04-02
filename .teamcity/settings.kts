@@ -78,7 +78,6 @@ object Build : BuildType({
             brachFilter = "+:*"
             buildStarted = true
             buildFailed = true
-            buildFinishedSuccessfully = true
             param("plugin:notificator:jbSlackNotifier:connection", "PROJECT_EXT_75")
             param("plugin:notificator:jbSlackNotifier:channel", "U037MMR1C")
         }
