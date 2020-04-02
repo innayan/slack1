@@ -89,5 +89,10 @@ object Build : BuildType({
             param("plugin:notificator:jbSlackNotifier:connection", "PROJECT_EXT_75")
             param("plugin:notificator:jbSlackNotifier:channel", "U037MMR1C")
         }
+        notifications {
+            notifier = "email"
+            brachFilter = "+:*"
+            param("email", "inna@test.ru")
+        }
     }
 })
