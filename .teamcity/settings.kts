@@ -62,6 +62,10 @@ object Build : BuildType({
         vcs {
         }
         schedule {
+            branchFilter = """
+                +:*
+                -:test
+            """.trimIndent()
             triggerBuild = always()
         }
     }
