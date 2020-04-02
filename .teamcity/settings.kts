@@ -54,7 +54,10 @@ object Build : BuildType({
 
     steps {
         script {
-            scriptContent = "ping -n 60 127.0.0.1 > nul"
+            scriptContent = """
+                echo master
+                ping -n 60 127.0.0.1 > nul
+            """.trimIndent()
         }
     }
 
