@@ -88,7 +88,10 @@ object Build : BuildType({
             notifier = "jbSlackNotifier"
             branchFilter = "+:*"
             buildStarted = true
+            buildFailedToStart = true
             buildFailed = true
+            firstBuildErrorOccurs = true
+            buildProbablyHanging = true
             param("plugin:notificator:jbSlackNotifier:connection", "PROJECT_EXT_75")
             param("plugin:notificator:jbSlackNotifier:channel", "U037MMR1C")
         }
