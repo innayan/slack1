@@ -86,7 +86,7 @@ object Build : BuildType({
     features {
         notifications {
             notifier = "jbSlackNotifier"
-            brachFilter = "+:*"
+            branchFilter = "+:*"
             buildStarted = true
             buildFailed = true
             param("plugin:notificator:jbSlackNotifier:connection", "PROJECT_EXT_75")
@@ -94,7 +94,7 @@ object Build : BuildType({
         }
         notifications {
             notifier = "email"
-            brachFilter = "+:*"
+            branchFilter = "+:*"
             param("email", "inna@test.ru")
         }
     }
