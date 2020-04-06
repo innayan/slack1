@@ -78,7 +78,7 @@ object Build : BuildType({
     features {
         notifications {
             notifier = "jbSlackNotifier"
-            brachFilter = "+:*"
+            branchFilter = "+:*"
             buildFinishedSuccessfully = true
             param("plugin:notificator:jbSlackNotifier:connection", "PROJECT_EXT_75")
             param("plugin:notificator:jbSlackNotifier:channel", "U037MMR1C")
